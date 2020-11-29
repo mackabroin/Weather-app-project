@@ -21,7 +21,7 @@
             <div class="col-9">
               <input
                 type="search"
-                placeholder="Type a city..."
+                placeholder="Search another city"
                 autofocus="on"
                 autocomplete="off"
                 id="city-input"
@@ -55,8 +55,8 @@
           <div class="row">
             <div class="col-6">
               <div class="clearfix">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                <img id="icon"
+                  src="http://openweathermap.org/img/wn/02d@2x.png"
                   alt="Cloudy icon"
                   class="weather-icon float-left"
                 />
@@ -71,12 +71,16 @@
             </div>
         </div>
       </div>
+      <div class="overview">
+        <h1 id="city"></h1>
+        <ul>
+          <li id="description"></li>
+        </ul>
+      </div>
       <div class="row">
         <div class="col-6">
           <div class="clearfix">
             <div class="float-left">
-              <span class="temperature" id="temperature"></span
-              ><span class="units"></span>
             </div>
           </div>
         </div>
@@ -89,7 +93,15 @@
       </div>
     </div>
   </div>
-    <footer> <a href="https://github.com/mackabroin/Weather-app-project">Github source</a></footer>
+  <small>
+    <a
+      href="https://github.com/mackabroin/Weather-app-project"
+      target="_blank"
+      >Open-source code</a>
+    by BMK
+  </small>
+</div>
+</div>
     </section>
     <script src="./src/index.js"></script>
   </body>
